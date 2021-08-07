@@ -36,7 +36,7 @@ const addCategory =(req, res) => {
 
         if(req.file){
             
-            categoryObj.categoryImage = process.env.API + '/public/' + req.file.filename;
+            categoryObj.categoryImage = '/public/' + req.file.filename;
         }
 
         if(req.body.parentId){
